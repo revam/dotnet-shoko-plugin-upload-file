@@ -43,7 +43,7 @@ public partial class UploadService(
     /// Pattern: ^[a-f](?:[a-f0-9]*[a-f])?$
     /// Matches hex strings where the first and last characters are letters a-f.
     /// </summary>
-    [GeneratedRegex(@"^[a-f](?:[a-f0-9]*[a-f])?$")]
+    [GeneratedRegex(@"^[a-f](?:[a-z0-9]*[a-z])?$")]
     public static partial Regex AreaNamePattern();
 
     /// <summary>

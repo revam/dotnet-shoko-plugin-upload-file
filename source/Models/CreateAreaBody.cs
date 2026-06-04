@@ -11,7 +11,7 @@ public class CreateAreaBody
     /// <summary>
     /// Area name.
     /// </summary>
-    [RegularExpression(@"^[a-f](?:[a-f0-9]*[a-f])?$")]
+    [RegularExpression(@"^[a-z](?:[a-z0-9]*[a-z])?$")]
     public string Name { get; set; } = string.Empty;
 
     /// <summary>

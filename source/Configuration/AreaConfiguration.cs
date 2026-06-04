@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using Shoko.Abstractions.Video.Services;
 
 namespace Shoko.Plugin.UploadFile.Configuration;
 
@@ -11,15 +12,14 @@ public class AreaConfiguration
 {
     /// <summary>
     /// Unique area identifier used in API routes.
-    /// Must match the regex pattern ^[a-f](?:[a-f0-9]*[a-f])?$: a hex string where
-    /// the first and last characters are letters a-f, minimum length 1.
     /// </summary>
     [Key]
+    [RegularExpression(@"^[a-z](?:[a-z0-9]*[a-z])?$")]
     public string Name { get; init; } = string.Empty;
 
     /// <summary>
     /// ID of the managed folder that files will be uploaded into.
-    /// Must reference an existing managed folder returned by <see cref="Shoko.Abstractions.Video.Services.IVideoService"/>.
+    /// Must reference an existing managed folder returned by <see cref="IVideoService"/>.
     /// </summary>
     public int ManagedFolderID { get; init; }
 
