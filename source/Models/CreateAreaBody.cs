@@ -11,6 +11,7 @@ public class CreateAreaBody
     /// <summary>
     /// Area name.
     /// </summary>
+    [Required]
     [RegularExpression(@"^[a-z](?:[a-z0-9]*[a-z])?$")]
     public string Name { get; set; } = string.Empty;
 
@@ -18,6 +19,8 @@ public class CreateAreaBody
     /// ID of the managed folder to use as the storage backend.
     /// Must reference an existing managed folder from Shoko's configuration.
     /// </summary>
+    [Required]
+    [Range(1, int.MaxValue)]
     public int ManagedFolderID { get; set; }
 
     /// <summary>

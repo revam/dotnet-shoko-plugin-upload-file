@@ -105,26 +105,12 @@ public class UploadController(
     /// <response code="403">User is not an administrator.</response>
     /// <response code="409">An area with the same name already exists.</response>
     [HttpPost("Area")]
-    public ActionResult<Area> CreateArea([FromBody] CreateAreaBody body)
+    public ActionResult<Area> CreateArea([FromBody(EmptyBodyBehavior = EmptyBodyBehavior.Disallow)] CreateAreaBody body)
     {
-        if (body is null)
-            return BadRequest("Request body is required.");
-
-        if (string.IsNullOrEmpty(body.Name))
-            return BadRequest("Area name is required.");
-
-        if (!UploadService.AreaNamePattern().IsMatch(body.Name))
-            return BadRequest("Invalid area name. Must match: ^[a-f](?:[a-f0-9]*[a-f])?$");
-
-        if (body.ManagedFolderID <= 0)
-            return BadRequest("Valid ManagedFolderID is required.");
-
-        var folders = _videoService.GetAllManagedFolders();
-        if (!folders.Any(f => f.ID == body.ManagedFolderID))
+        if (_videoService.GetManagedFolderByID(body.ManagedFolderID) is null)
             return BadRequest("Managed folder not found.");
 
         var config = _configProvider.Load();
-
         if (config.Areas.Any(a => string.Equals(a.Name, body.Name, StringComparison.OrdinalIgnoreCase)))
             return Conflict("An area with this name already exists.");
 
