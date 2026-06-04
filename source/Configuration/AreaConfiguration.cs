@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace Shoko.Plugin.UploadFile.Configuration;
 
 /// <summary>
@@ -12,6 +14,7 @@ public class AreaConfiguration
     /// Must match the regex pattern ^[a-f](?:[a-f0-9]*[a-f])?$: a hex string where
     /// the first and last characters are letters a-f, minimum length 1.
     /// </summary>
+    [Key]
     public string Name { get; init; } = string.Empty;
 
     /// <summary>
