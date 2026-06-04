@@ -183,7 +183,7 @@ public class UploadController(
     [DisableRequestSizeLimit]
     public async Task<ActionResult<UploadResult>> UploadToArea(
         string name,
-        [FromForm] IFormFile file,
+        IFormFile file,
         [FromForm] string checksum)
     {
         if (file is null || file.Length == 0)
