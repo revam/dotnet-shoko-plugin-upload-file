@@ -184,7 +184,7 @@ public class UploadController(
         var config = _configProvider.Load();
 
         if (!config.Enabled)
-            return StatusCode(StatusCodes.Status503ServiceUnavailable, "Plugin is disabled.");
+            return StatusCode(StatusCodes.Status400BadRequest, "Plugin is disabled.");
 
         var area = config.Areas.Find(a =>
             string.Equals(a.Name, name, StringComparison.OrdinalIgnoreCase));
