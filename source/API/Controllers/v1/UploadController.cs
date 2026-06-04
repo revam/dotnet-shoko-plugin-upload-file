@@ -5,9 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Shoko.Abstractions.Config;
-using Shoko.Abstractions.User;
-using Shoko.Abstractions.User.Services;
 using Shoko.Abstractions.Video.Services;
 using Shoko.Plugin.UploadFile.Configuration;
 using Shoko.Plugin.UploadFile.Models;
@@ -143,7 +142,7 @@ public class UploadController(
             return NotFound("Area not found.");
 
         _uploadService.DeleteArea(name);
-        return Ok(new { deleted = name });
+        return Ok();
     }
 
     /// <summary>
