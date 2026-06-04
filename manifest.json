@@ -1,0 +1,16 @@
+{
+  "id": "db81e3b3-67de-48d6-acd0-7da499cb30c5",
+  "name": "Upload File",
+  "overview": "Plugin for uploading files to staging areas on the server.",
+  "authors": "revam",
+  "repository_url": "https://github.com/revam/dotnet-shoko-plugin-upload-file",
+  "homepage_url": null,
+  "tags": [
+    "upload",
+    "staging",
+    "file-management"
+  ],
+  "image_url": null,
+  "releases": [
+  ]
+}
