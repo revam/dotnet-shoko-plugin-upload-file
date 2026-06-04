@@ -12,5 +12,21 @@
   ],
   "image_url": null,
   "releases": [
+    {
+      "version": "1.0.0",
+      "tag": "v1.0.0",
+      "source_revision": "bcddde5476d7baeea709aa7bc3e8ab0f9ba4b717",
+      "released_at": "2026-06-04T03:07:47Z",
+      "channel": "Stable",
+      "release_notes": null,
+      "archives": [
+        {
+          "runtime": "any",
+          "abstraction": "6.0.0",
+          "url": "https://github.com/revam/dotnet-shoko-plugin-upload-file/releases/download/v1.0.0/Shoko.Plugin.UploadFile-v1.0.0-any.zip",
+          "checksum": "d537b4f7908ec6e368a6e70be3e6734bebd811fac09bc8fe48b250b8f9c0cbfb"
+        }
+      ]
+    }
   ]
 }
