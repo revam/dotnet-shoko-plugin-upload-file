@@ -16,7 +16,7 @@ A [Shoko](https://shokoanime.com/) plugin that exposes API endpoints for uploadi
 1. Open the Shoko Web UI and navigate to **Settings → Plugins → Repositories**.
 2. Add the manifest URL:
    ```
-   https://raw.githubusercontent.com/animeplex/dotnet-shoko-plugin-upload-file/stable/manifest.json
+   https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-upload-file/stable/manifest.json
    ```
 3. Go to **Settings → Plugins → Browse** and find **Upload File**.
 4. Click **Install** on the desired version.
