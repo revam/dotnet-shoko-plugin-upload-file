@@ -3,3 +3,4 @@ source/obj/
 *.user
 *.suo
 .DS_Store
+dist/
