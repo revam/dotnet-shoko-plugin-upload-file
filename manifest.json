@@ -1,80 +1,10 @@
 {
+  "$schema": "https://raw.githubusercontent.com/ShokoAnime/ShokoServer/master/Shoko.BuildTools/manifest.schema.json",
   "id": "db81e3b3-67de-48d6-acd0-7da499cb30c5",
+  "type": "package",
   "name": "Upload File",
-  "overview": "Plugin for uploading files to staging areas on the server.",
+  "overview": "This is a stub manifest, not the published one. If you are reading it as a repository feed, you are on the wrong branch: the published identity and releases live on this repository's `metadata` branch, at `manifest.json`. CI pulls that file over this one before it builds anything. This copy exists so a local build has an id to match against.",
   "authors": "revam",
   "repository_url": "https://github.com/revam/dotnet-shoko-plugin-upload-file",
-  "homepage_url": null,
-  "tags": [
-    "upload",
-    "staging",
-    "file-management"
-  ],
-  "image_url": null,
-  "releases": [
-    {
-      "version": "1.0.3",
-      "tag": "v1.0.3",
-      "source_revision": "736e2007533975f7f3a60e5b23f25153d253e304",
-      "released_at": "2026-06-04T04:07:58Z",
-      "channel": "Stable",
-      "release_notes": null,
-      "archives": [
-        {
-          "runtime": "any",
-          "abstraction": "6.0.0",
-          "url": "https://github.com/revam/dotnet-shoko-plugin-upload-file/releases/download/v1.0.3/Shoko.Plugin.UploadFile-v1.0.3-any.zip",
-          "checksum": "5fc4af27eb5b61e879f1b21e06b89e5047f6e1ffc850025350c0d7851c4a256b"
-        }
-      ]
-    },
-    {
-      "version": "1.0.2",
-      "tag": "v1.0.2",
-      "source_revision": "6b11a916a70857f2f914ce244caf565432403147",
-      "released_at": "2026-06-04T03:49:41Z",
-      "channel": "Stable",
-      "release_notes": null,
-      "archives": [
-        {
-          "runtime": "any",
-          "abstraction": "6.0.0",
-          "url": "https://github.com/revam/dotnet-shoko-plugin-upload-file/releases/download/v1.0.2/Shoko.Plugin.UploadFile-v1.0.2-any.zip",
-          "checksum": "df169691a3151aca731d0a1c8098da9b0e539cc2dbf1fd0a03bb3ebc525f2b32"
-        }
-      ]
-    },
-    {
-      "version": "1.0.1",
-      "tag": "v1.0.1",
-      "source_revision": "ebf11bcd35848bdcde2ffd6d89641b87e60ea903",
-      "released_at": "2026-06-04T03:33:46Z",
-      "channel": "Stable",
-      "release_notes": null,
-      "archives": [
-        {
-          "runtime": "any",
-          "abstraction": "6.0.0",
-          "url": "https://github.com/revam/dotnet-shoko-plugin-upload-file/releases/download/v1.0.1/Shoko.Plugin.UploadFile-v1.0.1-any.zip",
-          "checksum": "c04a3fd27df48302e76fce25f62bdf227d99f9eb76f8cf69dc4198ef09f43016"
-        }
-      ]
-    },
-    {
-      "version": "1.0.0",
-      "tag": "v1.0.0",
-      "source_revision": "bcddde5476d7baeea709aa7bc3e8ab0f9ba4b717",
-      "released_at": "2026-06-04T03:07:47Z",
-      "channel": "Stable",
-      "release_notes": null,
-      "archives": [
-        {
-          "runtime": "any",
-          "abstraction": "6.0.0",
-          "url": "https://github.com/revam/dotnet-shoko-plugin-upload-file/releases/download/v1.0.0/Shoko.Plugin.UploadFile-v1.0.0-any.zip",
-          "checksum": "d537b4f7908ec6e368a6e70be3e6734bebd811fac09bc8fe48b250b8f9c0cbfb"
-        }
-      ]
-    }
-  ]
+  "releases": []
 }
