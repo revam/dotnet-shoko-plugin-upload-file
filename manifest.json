@@ -10,9 +10,23 @@
     "staging",
     "file-management"
   ],
-  "thumbnail_url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-upload-file/stable/source/Assets/thumbnail.svg",
-  "icon_url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-upload-file/stable/source/Assets/icon.svg",
   "releases": [
+    {
+      "version": "1.0.9",
+      "tag": "v1.0.9",
+      "released_at": "2026-10-13T23:51:24.0075351Z",
+      "channel": "Stable",
+      "release_notes": "Added a thumbnail and an icon for the plugin. Nothing else changed.\n\nRequires Shoko Server with abstractions \u00606.0.0-alpha.104\u0060.",
+      "dependencies": [],
+      "archives": [
+        {
+          "runtime": "any",
+          "abstraction": "6.0.0",
+          "url": "https://github.com/revam/dotnet-shoko-plugin-upload-file/releases/download/v1.0.9/UploadFile-v1.0.9-any.zip",
+          "checksum": "sha256:66caf3246c15028db90f9b0ea208a60978ca7f67b81a0ea277e32ce5d19e5fc2"
+        }
+      ]
+    },
     {
       "version": "1.0.8",
       "tag": "v1.0.8",
@@ -153,5 +167,7 @@
         }
       ]
     }
-  ]
+  ],
+  "thumbnail_url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-upload-file/stable/source/Assets/thumbnail.svg",
+  "icon_url": "https://raw.githubusercontent.com/revam/dotnet-shoko-plugin-upload-file/stable/source/Assets/icon.svg"
 }
