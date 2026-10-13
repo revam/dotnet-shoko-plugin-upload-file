@@ -32,6 +32,18 @@ public class Plugin : IPlugin, IPluginServiceRegistration
         "Plugin for uploading files to named staging areas on the server.";
 
     /// <summary>
+    /// The embedded resource of the plugin's wide image, shown in the plugin
+    /// manager where there is room for one.
+    /// </summary>
+    public string? EmbeddedThumbnailResourceName => "Shoko.Plugin.UploadFile.Assets.thumbnail.svg";
+
+    /// <summary>
+    /// The embedded resource of the plugin's square image, shown beside its
+    /// name.
+    /// </summary>
+    public string? EmbeddedIconResourceName => "Shoko.Plugin.UploadFile.Assets.icon.svg";
+
+    /// <summary>
     /// Registers plugin services into the host DI container.
     /// Called once by Shoko's plugin manager during application startup.
     /// </summary>
