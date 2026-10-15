@@ -1,6 +1,7 @@
 using System;
 using Microsoft.Extensions.DependencyInjection;
 using Shoko.Abstractions.Plugin;
+using Shoko.Plugin.UploadFile.Configuration;
 using Shoko.Plugin.UploadFile.Services;
 
 namespace Shoko.Plugin.UploadFile;
@@ -10,7 +11,7 @@ namespace Shoko.Plugin.UploadFile;
 /// Implements the plugin identity contract and service registration so that
 /// Shoko's plugin manager can discover and initialize this assembly at startup.
 /// </summary>
-public class Plugin : IPlugin, IPluginServiceRegistration
+public class Plugin : IPlugin<PluginConfiguration>, IPluginServiceRegistration
 {
     /// <summary>
     /// Plugin identifier GUID.

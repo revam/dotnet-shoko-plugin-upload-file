@@ -12,7 +12,7 @@ namespace Shoko.Plugin.UploadFile.Configuration;
 /// Areas are hidden behind the "Advanced" toggle and managed through the API.
 /// </summary>
 [Section(DisplaySectionType.Minimal)]
-public class PluginConfiguration : IHiddenConfiguration
+public class PluginConfiguration : IPluginConfiguration
 {
     /// <summary>
     /// Master switch to enable or disable the plugin.
