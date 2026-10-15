@@ -12,6 +12,22 @@
   ],
   "releases": [
     {
+      "version": "1.1.0",
+      "tag": "v1.1.0",
+      "released_at": "2026-10-15T09:40:16.1812931Z",
+      "channel": "Stable",
+      "release_notes": "Its settings are now the plugin\u0027s own settings, so a client can open them from the plugin. Otherwise behaves as before.\n\nRequires Shoko Server with abstractions \u00606.0.0-alpha.107\u0060.",
+      "dependencies": [],
+      "archives": [
+        {
+          "runtime": "any",
+          "abstraction": "6.0.0",
+          "url": "https://github.com/revam/dotnet-shoko-plugin-upload-file/releases/download/v1.1.0/UploadFile-v1.1.0-any.zip",
+          "checksum": "sha256:3c2338d36785d9d2330735d0bd887a9b6714f277ebde9a0952755aa1d9568c1e"
+        }
+      ]
+    },
+    {
       "version": "1.0.9",
       "tag": "v1.0.9",
       "released_at": "2026-10-13T23:51:24.0075351Z",
