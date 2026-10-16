@@ -12,6 +12,22 @@
   ],
   "releases": [
     {
+      "version": "1.1.1",
+      "tag": "v1.1.1",
+      "released_at": "2026-10-16T07:18:38.8929054Z",
+      "channel": "Stable",
+      "release_notes": "Rebuilt against the abstractions \u00606.0.0-alpha.108\u0060 release.\n\nRequires Shoko Server with abstractions \u00606.0.0-alpha.108\u0060.",
+      "dependencies": [],
+      "archives": [
+        {
+          "runtime": "any",
+          "abstraction": "6.0.0",
+          "url": "https://github.com/revam/dotnet-shoko-plugin-upload-file/releases/download/v1.1.1/UploadFile-v1.1.1-any.zip",
+          "checksum": "sha256:b4c4b3d226a7f4e5931ee230428732d632c85441ce9ac1943a881304fa248a84"
+        }
+      ]
+    },
+    {
       "version": "1.1.0",
       "tag": "v1.1.0",
       "released_at": "2026-10-15T09:40:16.1812931Z",
