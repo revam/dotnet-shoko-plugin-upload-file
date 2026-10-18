@@ -201,6 +201,10 @@ public partial class UploadService(
                 return (null!, "File already exists.");
 
             var tempPath = destPath + ".upload.tmp";
+            // The temp file lives next to the destination, so the directory must exist before the copy starts.
+            var dir = Path.GetDirectoryName(destPath);
+            if (!string.IsNullOrEmpty(dir) && !Directory.Exists(dir))
+                Directory.CreateDirectory(dir);
             try
             {
                 var (computedHash, size) = await HashAndCopyAsync(fileStream, tempPath, algoName);
@@ -216,10 +220,6 @@ public partial class UploadService(
                     TryDeleteFile(tempPath);
                     return (null!, $"Checksum mismatch. Expected {expectedHash}, computed {computedHash}.");
                 }
-
-                var dir = Path.GetDirectoryName(destPath);
-                if (!string.IsNullOrEmpty(dir) && !Directory.Exists(dir))
-                    Directory.CreateDirectory(dir);
 
                 File.Move(tempPath, destPath);
 

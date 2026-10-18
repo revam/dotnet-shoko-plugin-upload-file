@@ -166,6 +166,7 @@ public class UploadController(
     /// <response code="503">The plugin is disabled via configuration.</response>
     [HttpPost("Area/{name}/Upload")]
     [DisableRequestSizeLimit]
+    [RequestFormLimits(MultipartBodyLengthLimit = long.MaxValue)]
     public async Task<ActionResult<UploadResult>> UploadToArea(
         string name,
         IFormFile file,
