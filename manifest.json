@@ -12,6 +12,22 @@
   ],
   "releases": [
     {
+      "version": "1.1.2",
+      "tag": "v1.1.2",
+      "released_at": "2026-10-18T22:01:19.7936164Z",
+      "channel": "Stable",
+      "release_notes": "Accepts uploads larger than 128 MiB: the ASP.NET multipart form limit rejected them with a 400 before the upload ran. Also creates the area directory before writing, so the first upload into a new area path no longer fails.\n\nRequires Shoko Server with abstractions \u00606.0.0-alpha.108\u0060.",
+      "dependencies": [],
+      "archives": [
+        {
+          "runtime": "any",
+          "abstraction": "6.0.0",
+          "url": "https://github.com/revam/dotnet-shoko-plugin-upload-file/releases/download/v1.1.2/UploadFile-v1.1.2-any.zip",
+          "checksum": "sha256:a7738117aff8f0845ff568aabcbe06354c9149bef2341dc3a581120ff56e83c1"
+        }
+      ]
+    },
+    {
       "version": "1.1.1",
       "tag": "v1.1.1",
       "released_at": "2026-10-16T07:18:38.8929054Z",
